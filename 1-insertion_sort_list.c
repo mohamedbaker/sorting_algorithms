@@ -3,8 +3,7 @@
 
 /**
  * insertion_sort_list - Sorts a doubly linked list of ints
- * Description: by insertion sort algorithm
- *		then Prints the list after each swap.
+ * Description: by insertion sort algorithm then Prints ls.
  * @list: A pointer to the head of a list of ints.
  */
 void insertion_sort_list(listint_t **list)
@@ -32,6 +31,7 @@ void insertion_sort_list(listint_t **list)
  * swapNodes - swaps two nodes in a doubly-linked list
  * @a: first node address
  * @b: second node address
+ * @list: ls
  * Return: void
  */
 void swapNodes(listint_t **list, listint_t *a, listint_t *b)
