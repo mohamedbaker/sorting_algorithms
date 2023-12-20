@@ -16,18 +16,18 @@ void bubble_sort(int *array, size_t size)
 	if (!array || !size)
 		return;
 
-	for(counter = 0; counter < size - 1; counter++)
+	for (counter = 0; counter < size - 1; counter++)
 	{
-		for(i = 0; i < size - 1 - counter; i++)
+		for (i = 0; i < size - 1 - counter; i++)
 		{
-			if(array[i] > array[i + 1])
+			if (array[i] > array[i + 1])
 			{
 				swap(&array[i], &array[i + 1]);
 				print_array(array, size);
 				flag = 1;
 			}
 		}
-		if(flag == 0)
+		if (flag == 0)
 			break;
 	}
 }
@@ -35,7 +35,7 @@ void bubble_sort(int *array, size_t size)
 /**
 * swap - function takes two ints and swap them.
 * @firstNum: first number.
-* @seconNum: secondNum.
+* @secondNum: second number.
 */
 void swap(int *firstNum, int *secondNum)
 {
